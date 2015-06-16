@@ -4,10 +4,11 @@
 - AngularJS
 - Bootstrap
 - Font-Awesome
+- Basic app routing
 
 ## Back-end:
 - Node.js
-- Express.js
+- Express.js REST api and routing
 - MongoDB and mongoose
 
 ## Pre-Requisites:
@@ -15,8 +16,8 @@
 - NPM
 
 ## How to Install:
-npm install
+- npm install
 
 ## How to run:
-npm start
-Visit localhost:8080 in browser
+- npm start
+- Visit localhost:8080 in browser
