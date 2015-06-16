@@ -1,20 +1,22 @@
-Mobile friendly groceries application
+## Mobile friendly groceries application
 
-Front-end:
+## Front-end:
 - AngularJS
 - Bootstrap
 - Font-Awesome
 
-Back-end:
+## Back-end:
 - Node.js
 - Express.js
 - MongoDB and mongoose
 
-Pre-Requisites:
+## Pre-Requisites:
 - MongoDB
 - NPM
 
-How to Install:
+## How to Install:
 npm install
 
+## How to run:
+npm start
 Visit localhost:8080 in browser
