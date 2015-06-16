@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>ShoppingCart <i class="fa fa-shopping-cart"></i></h1>
+    </div>
+
+    <div class="text-center">
+        <span class="label label-info">{{list.length}}
+            <ng-pluralize count="list.length" when="{'1': 'Item', 'other': 'Items'}"></ng-pluralize>
+        </span>
+    </div>
+    
+    <div class="action-bar text-center">
+        <button type="submit" class="btn btn-primary" ng-click="clearSelected()" ng-class="{disabled: !showClear || list.length < 1}"><i class="fa fa-times-circle"></i> Clear Checked-Off</button>
+        <button type="submit" class="btn btn-primary" ng-click="clearAll()" ng-class="{disabled: list.length < 1}"><i class="fa fa-trash"></i> Clear Shopping List</button>
+    </div>
+
+    <div class="shopping-list row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <form>
+                <div class="checkbox" ng-repeat="item in list">
+                    <label>
+                        <input type="checkbox" ng-click="checkItem()" ng-model="formData.checked[item._id]">{{item.text}}
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="shopping-form row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control input-lg text-center" placeholder="Grocery item" ng-model="formData.text">
+                </div>
+
+                <button type="submit" class="btn btn-success btn-lg" ng-click="createItem()"><i class="fa fa-plus-circle"></i>&nbsp;Add</button>
+            </form>
+        </div>
+    </div>
+
+</div>
